@@ -1,5 +1,9 @@
 import styled from "styled-components";
-import img from "./img/me.jpg";
+import img from "../../images/pic2.jpeg";
+
+export const AboutPadding = styled.div`
+  padding: 4rem 0;
+`;
 
 export const FlexItems = styled.section`
   display: grid;
@@ -27,6 +31,16 @@ export const Image = styled.div`
     height: 100%;
     width: 100%;
   }
+`;
+
+export const BorderImage = styled.div`
+  position: absolute;
+  border: 10px solid #e4a86d;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 `;
 
 export const Content = styled.div`
