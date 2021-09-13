@@ -46,12 +46,12 @@ const AboutStyles = () => {
           <Content>
             <HeaderSml>About Me</HeaderSml>
             <Paragraph>
-              Hello! My name is Amir and i enjoy programming. i'm a self taugth
-              frontend developer who enjoy's solving problems. i start learning
-              web development in 2020 and ever since i've learnt HTML / Css /
-              Javascript / React / Redux and Wordpress. i'm a good team player
-              and i also have good eye for detailes, if you are intrested you
-              can see some of my works below.
+              Hello! My name is Kamran and i enjoy programming. i'm a self
+              taugth frontend developer who enjoy's solving problems. i start
+              learning web development in 2020 and ever since i've learnt HTML /
+              Css / Javascript / React / Redux and Wordpress. i'm a good team
+              player and i also have good eye for detailes, if you are intrested
+              you can see some of my works below.
             </Paragraph>
           </Content>
         </FlexItems>

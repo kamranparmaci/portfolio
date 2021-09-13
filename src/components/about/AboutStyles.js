@@ -2,7 +2,7 @@ import styled from "styled-components";
 import img from "../../images/pic2.jpeg";
 
 export const AboutPadding = styled.div`
-  padding: 4rem 0;
+  padding: 5rem 0;
 `;
 
 export const FlexItems = styled.section`
@@ -10,15 +10,22 @@ export const FlexItems = styled.section`
   grid-template-columns: repeat(2, 1fr);
   column-gap: 3rem;
   align-items: center;
-
   justify-content: space-between;
-  height: 500px;
+  height: auto;
   width: 100%;
-  margin: 3rem auto;
+  margin: 0 auto;
+
+  @media only screen and (max-width: 776px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  @media only screen and (min-width: 777px) and (max-width: 1024px) {
+    column-gap: 1rem;
+  }
 `;
 export const Image = styled.div`
   background: url(${img}) no-repeat center center/cover;
-  height: 100%;
+  height: 500px;
   width: 70%;
   position: relative;
 
@@ -30,6 +37,16 @@ export const Image = styled.div`
     top: 0;
     height: 100%;
     width: 100%;
+  }
+
+  @media only screen and (max-width: 776px) {
+    width: 80%;
+    height: 400px;
+    margin-bottom: 3.5rem;
+  }
+
+  @media only screen and (min-width: 777px) and (max-width: 1024px) {
+    height: 90%;
   }
 `;
 
@@ -45,11 +62,15 @@ export const BorderImage = styled.div`
 
 export const Content = styled.div`
   width: 70%;
+
+  @media only screen and (max-width: 776px) {
+    width: 80%;
+  }
 `;
 export const HeaderSml = styled.h3`
-  font-size: 24px;
+  font-size: 36px;
   color: #e4a86d;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
   line-height: 1.7;
   transform: rotateX(90deg);
 `;
@@ -57,7 +78,6 @@ export const HeaderSml = styled.h3`
 export const Paragraph = styled.p`
   font-size: 20px;
   color: 000;
-  margin-bottom: 20px;
   font-family: "Playfair Display", serif;
   line-height: 1.7;
 `;

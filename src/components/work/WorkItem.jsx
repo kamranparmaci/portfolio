@@ -32,7 +32,12 @@ const WorkItem = (props) => {
         <Content even={props.even}>
           <ContentH even={props.even}>{props.sourceName}</ContentH>
           <ContentP>{props.subTitle}</ContentP>
-          <ContentLink even={props.even} href={props.urlWork} target="_blank">
+          <ContentLink
+            even={props.even}
+            href={props.urlWork}
+            target="_blank"
+            rel="no-referrer"
+          >
             Live Preview
           </ContentLink>
         </Content>

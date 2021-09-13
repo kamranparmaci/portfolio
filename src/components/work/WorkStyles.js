@@ -29,9 +29,19 @@ export const Wrapper = styled.div`
   flex-direction: ${({ even }) => (even ? "row" : "row-reverse")};
   align-items: center;
   justify-content: center;
-  margin-bottom: 7rem;
+  margin: 0 1rem 7rem;
   height: 100%;
   transform: translateX(${({ even }) => (even ? "150px" : "-150px")});
+
+  @media only screen and (max-width: 767px) {
+    flex-direction: column-reverse;
+    transform: translateX(${({ even }) => (even ? "150px" : "-150px")});
+    margin: 0 1rem 2rem;
+  }
+
+  @media only screen and (min-width: 777px) and (max-width: 1024px) {
+    margin: 0 1rem 2rem;
+  }
 `;
 export const Image = styled.div`
   background-image: url(${({ background }) => background});
@@ -40,7 +50,13 @@ export const Image = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 50px;
+  border-radius: 25px;
+
+  @media only screen and (max-width: 767px) {
+    height: 200px;
+    width: 100%;
+    border-radius: 5px;
+  }
 `;
 export const Content = styled.div`
   position: relative;
@@ -49,12 +65,17 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  height: 270px;
-
+  height: auto;
   border-radius: 50px;
   z-index: 2;
   padding: 2rem;
   transform: translateX(${({ even }) => (even ? "50px" : "-50px")});
+
+  @media only screen and (max-width: 767px) {
+    transform: translate(0, -20px);
+    padding: 1rem;
+    border-radius: 0;
+  }
 
   background-image: linear-gradient(
     ${({ even }) =>
@@ -74,6 +95,10 @@ export const ContentH = styled.h2`
   align-self: ${({ even }) => (even ? "flex-end" : "flex-start")};
   color: #0057ff;
   margin-bottom: 10px;
+
+  @media only screen and (max-width: 767px) {
+    align-self: flex-start;
+  }
 `;
 export const ContentP = styled.p`
   font-size: 18px;
@@ -88,6 +113,10 @@ export const ContentLink = styled.a`
   align-self: ${({ even }) => (even ? "flex-end" : "flex-start")};
   color: #000;
   margin-bottom: 10px;
+
+  @media only screen and (max-width: 767px) {
+    align-self: flex-start;
+  }
 
   &::after {
     position: absolute;

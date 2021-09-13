@@ -1,37 +1,22 @@
 import React from "react";
+import {
+  FooterContainer,
+  FooterCreatorContainer,
+  FooterImgCreator,
+  FooterSpan,
+} from "./FooterStyles";
 
 const Footer = () => {
   return (
-    <div
-      style={{
-        paddingTop: "4rem",
-        height: "200px",
-      }}
-    >
+    <FooterContainer>
       <div className="container">
-        <span style={{ color: "#555", display: "block" }}>Created By</span>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "flex-start",
-            alignItems: "center",
-            marginTop: ".5rem",
-          }}
-        >
-          <img
-            src="../../images/pic1.png"
-            alt="Kamran Parmaci"
-            style={{
-              width: "60px",
-              height: "60px",
-              borderRadius: "50%",
-              objectFit: "cover",
-            }}
-          />
+        <FooterSpan>Created By</FooterSpan>
+        <FooterCreatorContainer>
+          <FooterImgCreator src="../../images/pic1.png" alt="Kamran Parmaci" />
           <span>Kamran Parmaci</span>
-        </div>
+        </FooterCreatorContainer>
       </div>
-    </div>
+    </FooterContainer>
   );
 };
 

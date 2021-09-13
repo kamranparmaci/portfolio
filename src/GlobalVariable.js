@@ -10,6 +10,7 @@ export const Globaly = createGlobalStyle`
 body {
   line-height: 1.5;
   background-color: #fff;
+  overflow-x: hidden;
 }
 
 a {
@@ -17,7 +18,7 @@ a {
 }
 
  .container {
-  max-width: 84.4%;
+  max-width: 90%;
   margin: 0 auto;
 } 
 

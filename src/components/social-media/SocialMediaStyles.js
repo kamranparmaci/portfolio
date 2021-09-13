@@ -4,10 +4,12 @@ export const SocialContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 0.25rem;
+  justify-content: center;
   align-items: center;
   position: fixed;
   right: 30px;
   bottom: 20px;
+  z-index: 999;
 `;
 
 export const SocialLink = styled.a`
